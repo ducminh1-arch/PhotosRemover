@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Remo Duplicate Photos Remover</string>
+    <string name="app_tagline">Duplicate Photo &amp; Video Cleaner</string>
+    <string name="start_scan">Start scan to find duplicates</string>
+    <string name="scanning_photos">Scanning files, please wait…</string>
+    <string name="scanning_subtext">Scanning time depends on number of files.</string>
+    <string name="cancel_scan">Cancel Scan</string>
+    <string name="tab_exact">Exact</string>
+    <string name="tab_similar">Similar</string>
+    <string name="tab_videos">Videos</string>
+    <string name="photos_cleaned_so_far">Files cleaned so far</string>
+    <string name="storage_freed">Storage freed</string>
+    <string name="similar_sensitivity">Similar Sensitivity</string>
+    <string name="sensitivity_strict">Strict (≤ 3 bits)</string>
+    <string name="sensitivity_normal">Normal (≤ 5 bits)</string>
+    <string name="sensitivity_loose">Loose (≤ 10 bits)</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_app">Rate App</string>
+    <string name="about_app">About Remo</string>
+    <string name="preview">Preview</string>
+    <string name="delete">Delete</string>
+    <string name="keep">Keep</string>
+    <string name="best_photo">Best Photo</string>
+    <string name="select_all_except_best">Select all except Best</string>
+    <string name="permission_required_title">Photo &amp; Video Permission Required</string>
+    <string name="permission_required_desc">Remo needs access to your photo and video library to detect duplicate and similar files.</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="partial_access_notice">You granted partial access. For best results and full cleanup, grant access to all photos.</string>
+    <string name="no_duplicates_found">Great job! No duplicate photos found.</string>
+    <string name="no_similar_found">No similar photos found.</string>
+</resources>

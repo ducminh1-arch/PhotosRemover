@@ -1,0 +1,13 @@
+# Android / Gradle
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.cxx/
+captures/
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+.DS_Store

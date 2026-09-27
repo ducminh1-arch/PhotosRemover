@@ -1,0 +1,80 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Sparkle Top-Right (Gold) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M88,14 L90,20 L96,22 L90,24 L88,30 L86,24 L80,22 L86,20 Z" />
+
+    <!-- Sparkle Bottom-Left (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,78 L19.5,83.5 L25,85 L19.5,86.5 L18,92 L16.5,86.5 L11,85 L16.5,83.5 Z" />
+
+    <!-- 1. Outer Square Frame Border (Dark Contrast) -->
+    <path
+        android:fillColor="#1E293B"
+        android:pathData="M36,22 H72 A14,14 0 0 1 86,36 V72 A14,14 0 0 1 72,86 H36 A14,14 0 0 1 22,72 V36 A14,14 0 0 1 36,22 Z" />
+
+    <!-- 2. Main Square Card (Amber Yellow #FFC800) -->
+    <path
+        android:fillColor="#FFC800"
+        android:pathData="M36,24 H72 A12,12 0 0 1 84,36 V72 A12,12 0 0 1 72,84 H36 A12,12 0 0 1 24,72 V36 A12,12 0 0 1 36,24 Z" />
+
+    <!-- 3. Center Vertical Divider (Splits into 2 Duplicate Photo Cards) -->
+    <path
+        android:fillColor="#1E293B"
+        android:pathData="M53,24 H55 V84 H53 Z" />
+
+    <!-- ── LEFT PHOTO CARD ── -->
+    <!-- Photo Viewport (White/Cream) -->
+    <path
+        android:fillColor="#FFFBEB"
+        android:pathData="M32,28 H46 A4,4 0 0 1 50,32 V60 A4,4 0 0 1 46,64 H32 A4,4 0 0 1 28,60 V32 A4,4 0 0 1 32,28 Z" />
+
+    <!-- Sun (Red/Orange) -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M34,33.5 A2.5,2.5 0 1 0 34,38.5 A2.5,2.5 0 1 0 34,33.5 Z" />
+
+    <!-- Mountains (Green Landscape) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M28,64 L35,50 L43,64 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M38,64 L45,55 L50,64 Z" />
+
+    <!-- File Size Ribbon / Badge -->
+    <path
+        android:fillColor="#78350F"
+        android:pathData="M31,70 H47 A2,2 0 0 1 49,72 V76 A2,2 0 0 1 47,78 H31 A2,2 0 0 1 29,76 V72 A2,2 0 0 1 31,70 Z" />
+
+    <!-- ── RIGHT PHOTO CARD (Exact duplicate match) ── -->
+    <!-- Photo Viewport (White/Cream) -->
+    <path
+        android:fillColor="#FFFBEB"
+        android:pathData="M62,28 H76 A4,4 0 0 1 80,32 V60 A4,4 0 0 1 76,64 H62 A4,4 0 0 1 58,60 V32 A4,4 0 0 1 62,28 Z" />
+
+    <!-- Sun (Red/Orange) -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M64,33.5 A2.5,2.5 0 1 0 64,38.5 A2.5,2.5 0 1 0 64,33.5 Z" />
+
+    <!-- Mountains (Green Landscape) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M58,64 L65,50 L73,64 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M68,64 L75,55 L80,64 Z" />
+
+    <!-- File Size Ribbon / Badge -->
+    <path
+        android:fillColor="#78350F"
+        android:pathData="M61,70 H77 A2,2 0 0 1 79,72 V76 A2,2 0 0 1 77,78 H61 A2,2 0 0 1 59,76 V72 A2,2 0 0 1 61,70 Z" />
+
+</vector>

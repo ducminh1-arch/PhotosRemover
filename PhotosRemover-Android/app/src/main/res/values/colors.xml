@@ -1,0 +1,11 @@
+<resources>
+    <color name="brand_primary">#2F6BFF</color>
+    <color name="brand_primary_dark">#1A4DBE</color>
+    <color name="brand_accent">#FFB300</color>
+    <color name="brand_accent_variant">#FFA000</color>
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+</resources>

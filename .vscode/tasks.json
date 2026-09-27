@@ -1,0 +1,58 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Android: Install & Launch on Device",
+            "type": "shell",
+            "command": "$env:JAVA_HOME = 'C:\\Users\\Admin\\.jdk\\jdk-17\\jdk-17.0.20.1+1'; .\\gradlew.bat installDebug; & 'C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' shell am start -n com.photosremover.app/.MainActivity",
+            "options": {
+                "cwd": "${workspaceFolder}/PhotosRemover-Android"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Android: Build Debug APK",
+            "type": "shell",
+            "command": "$env:JAVA_HOME = 'C:\\Users\\Admin\\.jdk\\jdk-17\\jdk-17.0.20.1+1'; .\\gradlew.bat assembleDebug",
+            "options": {
+                "cwd": "${workspaceFolder}/PhotosRemover-Android"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Android: Run Unit Tests",
+            "type": "shell",
+            "command": "$env:JAVA_HOME = 'C:\\Users\\Admin\\.jdk\\jdk-17\\jdk-17.0.20.1+1'; .\\gradlew.bat test",
+            "options": {
+                "cwd": "${workspaceFolder}/PhotosRemover-Android"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Preview UI in Browser (Interactive Demo)",
+            "type": "shell",
+            "command": "Start-Process 'demo-preview.html'",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Android: View Live Logcat",
+            "type": "shell",
+            "command": "& 'C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' logcat -s CleanPix:V DuplicateEngine:V AndroidRuntime:E",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
