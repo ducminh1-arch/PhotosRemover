@@ -264,7 +264,7 @@ public final class MainViewModel: ObservableObject {
                 // Remove deleted photos
                 let filterSets = { (sets: [DuplicateSet]) -> [DuplicateSet] in
                     return sets.compactMap { set in
-                        let remaining = set.photos.filter { !itIsSelected($0, in: selectedPhotos) }
+                        let remaining = set.photos.filter { !self.itIsSelected($0, in: selectedPhotos) }
                         return remaining.count >= 2 ? DuplicateSet(id: set.id, title: set.title, type: set.type, photos: remaining) : nil
                     }
                 }

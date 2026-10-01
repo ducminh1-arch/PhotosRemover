@@ -173,13 +173,14 @@ public struct PhotoCardView: View {
     }
 
     private func loadThumbnail() {
+        guard let asset = photo.asset else { return }
         let manager = PHImageManager.default()
         let options = PHImageRequestOptions()
         options.deliveryMode = .fastFormat
         options.isNetworkAccessAllowed = true
 
         manager.requestImage(
-            for: photo.asset,
+            for: asset,
             targetSize: CGSize(width: 160, height: 200),
             contentMode: .aspectFill,
             options: options

@@ -67,7 +67,9 @@ public final class DeviceStorageService {
         ]
         let values = try? homeURL.resourceValues(forKeys: keys)
         let total = Int64(values?.volumeTotalCapacity ?? 0)
-        let free = Int64(values?.volumeAvailableCapacityForImportantUsage ?? values?.volumeAvailableCapacity ?? 0)
+        let freeImportant = values?.volumeAvailableCapacityForImportantUsage
+        let freeFallback = values?.volumeAvailableCapacity.map { Int64($0) }
+        let free = freeImportant ?? freeFallback ?? 0
         return DeviceStorageInfo(totalBytes: total, freeBytes: free)
     }
 

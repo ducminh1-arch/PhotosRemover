@@ -200,23 +200,23 @@ public struct ResultsView: View {
 
                         ForEach(sortedSets) { set in
                             SetCardView(
-                                set = set,
-                                isPhotoExcluded = { photoId in
+                                set: set,
+                                isPhotoExcluded: { photoId in
                                     viewModel.isExcluded(photoId)
                                 },
-                                onPhotoTap = { photo in
+                                onPhotoTap: { photo in
                                     viewModel.openPreview(photo: photo, set: set)
                                 },
-                                onTogglePhotoSelect = { photoId in
+                                onTogglePhotoSelect: { photoId in
                                     viewModel.togglePhotoSelection(setId: set.id, photoId: photoId)
                                 },
-                                onToggleSetSelect = {
+                                onToggleSetSelect: {
                                     viewModel.toggleSetSelection(setId: set.id)
                                 },
-                                onSelectAllExceptBest = {
+                                onSelectAllExceptBest: {
                                     viewModel.selectAllExceptBest(setId: set.id)
                                 },
-                                onTogglePhotoExclude = { photoId in
+                                onTogglePhotoExclude: { photoId in
                                     viewModel.toggleExclusion(photoId: photoId)
                                 }
                             )

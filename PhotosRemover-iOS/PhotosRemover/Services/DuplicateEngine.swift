@@ -194,7 +194,7 @@ public final class DuplicateEngine {
         var current = 0
 
         for photo in candidates {
-            if let dHash = photo.dHash {
+            if photo.dHash != nil {
                 photosWithHash.append(photo)
             } else if let asset = photo.asset, let hash = await computeDHash(for: asset) {
                 var updated = photo
@@ -535,7 +535,7 @@ public final class DuplicateEngine {
             }
             let set = DuplicateSet(
                 id: "similar_video_\(setIndex)",
-                title = "Set: \(setIndex)",
+                title: "Set: \(setIndex)",
                 type: .videos,
                 photos: processed
             )

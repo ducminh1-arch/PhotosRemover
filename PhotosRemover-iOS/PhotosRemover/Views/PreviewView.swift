@@ -213,13 +213,14 @@ public struct PreviewView: View {
     }
 
     private func loadHighResImage() {
+        guard let asset = photo.asset else { return }
         let manager = PHImageManager.default()
         let options = PHImageRequestOptions()
         options.deliveryMode = .highQualityFormat
         options.isNetworkAccessAllowed = true
 
         manager.requestImage(
-            for: photo.asset,
+            for: asset,
             targetSize: PHImageManagerMaximumSize,
             contentMode: .aspectFit,
             options: options
